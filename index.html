@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXTKIT — Everything You Need. One Powerful Toolkit.</title>
+    <meta
+      name="description"
+      content="NEXTKIT is a futuristic all-in-one productivity workspace and 21-tool digital suite for workspace planning, writing, image & PDF processing, developer utilities, and everyday tools."
+    />
+    <meta name="theme-color" content="#060913" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NEXTKIT — Everything You Need. One Powerful Toolkit." />
+    <meta
+      property="og:description"
+      content="Access 21 fast, privacy-first online tools and a full personal productivity workspace from one futuristic platform."
+    />
+    <meta property="og:site_name" content="NEXTKIT" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NEXTKIT — Everything You Need. One Powerful Toolkit." />
+    <meta
+      name="twitter:description"
+      content="21 fast, privacy-first tools for productivity, writing, PDF/images, developer utilities, and daily calculations."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('nextkit:theme');
+          var theme = saved === 'light' || saved === 'dark' ? saved : 'dark';
+          document.documentElement.classList.remove('light', 'dark');
+          document.documentElement.classList.add(theme);
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
